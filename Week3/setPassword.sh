@@ -1,9 +1,7 @@
 #!/bin/bash
 echo "input folder name"
 read -p 'foldername : ' fold_var
-mkdir $fold_var
-cd $fold_var
-# previous lines ask user to input folder name and creates that folder
+# previous 2 lines ask user to input folder name
 echo "set password"
 read -sp 'password : ' pass_var
 # previous lines ask user to set password for folder
