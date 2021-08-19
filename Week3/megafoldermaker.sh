@@ -1,19 +1,13 @@
 
 #!/bin/bash
-
-#If there aren't two arguments to the script
-
-if (( $#!=2 )); then
-
-    #Print an error and exit
-
-    echo "Error, provide two numbers" && exit 1
-
-fi
+echo "Input first integer of range"
+read first_var
+echo "Input second integer of range"
+read sec_var
 
 #For every number between the first argument and the last
 
-for ((i = $1; i <= $2; i++))
+for ((i = $first_var; i <= $sec_var; i++))
 
 do
 
@@ -21,6 +15,6 @@ do
 
     echo "Creating directory number $i"
 
-    mkdir "week $i"
+    mkdir "week$i"
 
 done

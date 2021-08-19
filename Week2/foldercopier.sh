@@ -10,7 +10,7 @@ if [ -d "$folderName" ]; then
 
     read -p "type the name of the destination folder: " newFolderName
 
-    cp -r "$folderName" "$newFolderName"
+    cp -r2 "$folderName" "$newFolderName"
 
 else
 
